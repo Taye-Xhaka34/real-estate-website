@@ -22,7 +22,6 @@ real-estate/
 │   └── scroll-features.js
 └── images/
 🧠 Built With
-
 HTML5
 CSS3
 JavaScript (Vanilla)
