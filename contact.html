@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | DreamHomes Real Estate</title>
+            <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/logo.webp">
+        <!--Custom css-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <!-- AOS (Animate On Scroll) Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+<header>
+  <div class="logo">RealEstateCo</div>
+
+  <!-- Hamburger icon (hidden on desktop) -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="theme-toggle">
+    <i class="fas fa-sun" id="theme-icon"></i>
+  </div>
+</header>
+<div class="about-section" data-aos="fade-up"></div>
+
+  <!-- Hero -->
+  <section class="contact-hero" style="background-image: url('images/contact1.avif');">
+    <div class="overlay">
+      <h2>Contact Us</h2>
+      <p>We are here to help you find your dream home</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Contact Form -->
+      <div class="contact-form-section">
+        <h3>Send Us a Message</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="tel" placeholder="Your Phone" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Office Info -->
+      <div class="contact-info">
+        <h3>Our Office</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Dream Street, DreamCity, DC 10001</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-envelope"></i> info@dreamhomes.com</p>
+
+<!-- Map -->
+<div class="map">
+  <iframe
+    src="https://www.google.com/maps?q=Addis+Ababa,+Ethiopia&output=embed"
+    width="100%"
+    height="250"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DreamHomes. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/scroll-features.js"></script>
+   <script src="js/scroll-features.js"></script>
+  <!-- Floating Telegram Chat Button -->
+<a href="https://t.me/Tsaka7" class="chat-button" target="_blank">
+  <i class="fab fa-telegram-plane"></i>
+</a>
+<!-- Back to Top Button -->
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration (in ms)
+    offset: 100, // distance to start the animation
+    once: true // animates only once
+  });
+</script>
+</html>

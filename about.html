@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | DreamHomes Real Estate</title>
+          <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logo.webp">
+    <!--Custom css-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <!-- AOS (Animate On Scroll) Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+  <div class="logo">RealEstateCo</div>
+
+  <!-- Hamburger icon (hidden on desktop) -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="theme-toggle">
+    <i class="fas fa-sun" id="theme-icon"></i>
+  </div>
+</header>
+<div class="about-section" data-aos="fade-up"></div>
+
+  <!-- About Hero -->
+  <section class="about-hero" style="background-image: url('images/hero.avif');">
+    <div class="overlay">
+      <h2>About DreamHomes</h2>
+      <p>Trusted real estate solutions since 2010</p>
+    </div>
+  </section>
+
+<!-- Company Info -->
+<section class="company-info">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-text">
+        <h2>Who We Are</h2>
+        <p>
+          At <span class="highlight">DreamHomes</span>, we believe that finding the right property should be a joyful journey. 
+          With over a decade of expertise in both residential and commercial real estate, 
+          our mission is to connect families and investors with their perfect space.
+        </p>
+        <p>
+          From <strong>luxury villas</strong> to <strong>modern city apartments</strong>, 
+          we provide trusted, transparent, and tailored property solutions 
+          that turn your dream into a reality.
+        </p>
+      </div>
+      <div class="info-image">
+        <img src="images/contact1.avif" alt="Our Company">
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Team Section -->
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/team1.avif" alt="Agent 1">
+        <h3>Sarah Johnson</h3>
+        <p>Senior Real Estate Agent</p>
+      </div>
+      <div class="team-card">
+        <img src="images/team2.avif" alt="Agent 2">
+        <h3>Michael Smith</h3>
+        <p>Property Consultant</p>
+      </div>
+      <div class="team-card">
+        <img src="images/team3.webp" alt="Agent 3">
+        <h3>Emily Davis</h3>
+        <p>Marketing Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DreamHomes. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/scroll-features.js"></script>
+  <!-- Floating Telegram Chat Button -->
+<a href="https://t.me/Tsaka7" class="chat-button" target="_blank">
+  <i class="fab fa-telegram-plane"></i>
+</a>
+<!-- Back to Top Button -->
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration (in ms)
+    offset: 100, // distance to start the animation
+    once: true // animates only once
+  });
+</script>
+</html>

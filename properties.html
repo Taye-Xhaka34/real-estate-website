@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Properties | DreamHomes Real Estate</title>
+          <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logo.webp">
+    <!--Custom css-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <!-- AOS (Animate On Scroll) Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <header>
+  <div class="logo">RealEstateCo</div>
+
+  <!-- Hamburger icon (hidden on desktop) -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="theme-toggle">
+    <i class="fas fa-sun" id="theme-icon"></i>
+  </div>
+</header>
+<div class="about-section" data-aos="fade-up">
+
+  <!-- Hero -->
+  <section class="page-hero" style="background-image: url('images/hero.avif');">
+    <div class="overlay">
+      <h2>Our Properties</h2>
+      <p>Find the perfect home for you</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <div class="filter-container">
+      <select id="locationFilter">
+        <option value="all">All Locations</option>
+        <option value="city">City</option>
+        <option value="suburb">Suburb</option>
+        <option value="beach">Beachfront</option>
+      </select>
+
+      <select id="typeFilter">
+        <option value="all">All Types</option>
+        <option value="apartment">Apartment</option>
+        <option value="house">House</option>
+        <option value="villa">Villa</option>
+      </select>
+
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="low">Below $500k</option>
+        <option value="mid">$500k - $1M</option>
+        <option value="high">Above $1M</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Property Grid -->
+  <section class="property-list">
+    <div class="property-grid" id="propertyGrid">
+
+      <!-- Property Example -->
+      <div class="property-card" data-location="city" data-type="apartment" data-price="mid">
+        <img src="images/apartament2.avif" alt="Apartment">
+        <div class="property-info">
+          <h3>Modern City Apartment</h3>
+          <p>$750,000 · 3 Beds · 2 Baths</p>
+          <button onclick="window.location.href='property-details.html'">View Details</button>
+        </div>
+      </div>
+
+      <div class="property-card" data-location="suburb" data-type="house" data-price="low">
+        <img src="images/house2.webp" alt="House">
+        <div class="property-info">
+          <h3>Cozy Family House</h3>
+          <p>$450,000 · 4 Beds · 3 Baths</p>
+          <button onclick="window.location.href='property-details.html'">View Details</button>
+        </div>
+      </div>
+
+      <div class="property-card" data-location="beach" data-type="villa" data-price="high">
+        <img src="images/house1.avif" alt="Villa">
+        <div class="property-info">
+          <h3>Luxury Beach Villa</h3>
+          <p>$1,500,000 · 5 Beds · 5 Baths</p>
+          <button onclick="window.location.href='property-details.html'">View Details</button>
+        </div>
+      </div>
+
+      <div class="property-card" data-location="city" data-type="apartment" data-price="low">
+        <img src="images/apartament1.webp" alt="Apartment">
+        <div class="property-info">
+          <h3>Budget Apartment</h3>
+          <p>$350,000 · 2 Beds · 1 Bath</p>
+          <button onclick="window.location.href='property-details.html'">View Details</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DreamHomes. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/menu-toggle.js"></script>
+  <!-- Floating Telegram Chat Button -->
+<a href="https://t.me/Tsaka7" class="chat-button" target="_blank">
+  <i class="fab fa-telegram-plane"></i>
+</a>
+<!-- Back to Top Button -->
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration (in ms)
+    offset: 100, // distance to start the animation
+    once: true // animates only once
+  });
+</script>
+</html>
